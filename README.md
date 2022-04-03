@@ -191,7 +191,7 @@ docker run -p 9090:9090 vulfocus/spring-core-rce-2022-03-29
 The app should now be available at `http://localhost:9090`.
 
 ### More details around Spring4Shell
-We have covered more details around Spring4Shell Vulnerability in our [blog]().
+We have covered more details around Spring4Shell Vulnerability in our [blog](https://redhuntlabs.com/blog/the-spring4shell-vulnerability.html).
 
 ### License & Version
 The tool is licensed under the MIT license. See [LICENSE](LICENSE).
