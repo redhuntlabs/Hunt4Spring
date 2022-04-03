@@ -35,8 +35,12 @@ Hunt4Spring helps with identifying as well as exploiting URLs which are potentia
          Specify a single target URL.
 ```
 
+To use the tool, you can grab any one of the binaries from the [releases section](https://github.com/redhuntlabs/Hunt4Spring/releases) or build the source code yourself. The code is in Go, hence a simple `go build` will do the job, provided you have a working Go setup.
+
 ### Flags
-In order to run Hunt4Spring, users have two options available. Either they can provide a single URL using the **-url** flag or provide with bulk URLs through a file by using the **-file** flag. They can even specify the name of the file where they would like to store the output in JSON format by using the **-outfile** flag. [By default the output gets stored in hunt4spring.json]
+In order to run Hunt4Spring, users have two options available. Either they can provide a single URL using the `-url` flag or provide with bulk URLs through a file by using the `-file` flag. 
+
+You can specify the name of the file to store the output in JSON format by using the `-outfile` flag. [By default the output gets stored in a file called `hunt4spring.json`]
 
 ```sh
 $ ./hunt4spring -url http://127.0.0.1:8080/ -exploit -outfile op.json
@@ -187,7 +191,7 @@ docker run -p 9090:9090 vulfocus/spring-core-rce-2022-03-29
 The app should now be available at `http://localhost:9090`.
 
 ### More details around Spring4Shell
-We have covered more details around Spring4Shell Vulnerability in our <a href="#">Blog</a>.
+We have covered more details around Spring4Shell Vulnerability in our [blog]().
 
 ### License & Version
 The tool is licensed under the MIT license. See [LICENSE](LICENSE).
